@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 2px solid black;
+}
+
+#flexheader {
+    width: 95%;
+    margin: 0 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoflex {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoAMW {
+    padding: 15px;
+    width: 20rem;
+    height: auto;
+}
+
+#menu2 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+#menu2 a {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    margin: 0 1.25rem;
+}
+
+.menuclickable:hover{
+    opacity: 0.6;
+}
+
+#menuicone {
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menuicone:hover {
+    color: #f7b500;
+}
+
+#menu-flex {
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-flex ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu-flex li {
+    list-style-type: none;
+    float: left;
+}
+
+#menu-flex a {
+    display: block;
+    padding: 20px 75px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.menu-section:hover {
+    background-color: rgb(53, 53, 53);
+    border-top: 5px solid #f7b500;
+}
+
+#menu-flex li:hover a {
+    padding: 15px 75px 20px 75px;
+}
+
+.title {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+    background-color: rgb(53, 53, 53);
+    border-bottom: 2px solid #f7b500;  
+}
+
+#slide1 {
+    background: url("ressources/porsche_992_turbo_S_profil.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slide1flex {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slide1 h1 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    border: 2px solid #f7b500;
+    padding: 15px;
+    width: 80%;
+    margin-top: 5rem;
+}
+
+#slide1p {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    white-space: pre-wrap;
+    color: white;
+    margin-top: 4rem;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(53, 53, 53, 0.623);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#button {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    border: 2px solid #f7b500;
+}
+
+#button:hover {
+    color: #f7b500;
+}
+
+#slide2 {
+    background: url("ressources/porsche_992_turbo_S_face.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 120vh;
+    justify-content: center;
+}
+
+#slide2fleximages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 2.5rem auto 0;
+    background-color: rgb(53, 53, 53);
+    padding-top: 2rem;
+    margin-top: 5%;
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: sticky;
+}
+
+.slide2images {
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;  
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 115%;
+}
+  
+.container:hover .slide2images {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: #f7b500;
+    font-size: 16px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+}
+
+#slide3 {
+    background: url("ressources/porsche_992_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#slide3flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(53, 53, 53, 0.623);
+    margin-top: 10%;
+    padding: 1rem;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+footer {
+    margin: 0;
+    height: 35vh;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+}
+
+#divflexfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+#divlogoplusreseauxsociaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin-top: 5vh;
+}
+
+#logoAMWfooter {
+    height:2.5rem;
+    width: auto;
+}
+
+#divlogoplusreseauxsociaux p {
+    margin-top: 5vh;
+    color: #8F8F8F;
+}
+
+#menu-icons-footer {
+    margin-top: 2vh;
+}
+
+#iconeinstafooter {
+    text-decoration: none;
+    color: black;
+}
+
+#iconeinstafooter:hover {
+    color: #f7b500;
+}
+
+#iconetwitterfooter {
+    text-decoration: none;
+    color: black;
+}
+
+#iconetwitterfooter:hover {
+    color: #f7b500;
+}
+
+#contactfooter {
+    text-decoration: none;
+    color: #8F8F8F;
+    margin-top: 1.5vh;
+}
+
+#trait_dessus {
+    height : 25vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-left: 2px solid #f7b500;
+    display: inline-block;
+} 
+
+#divinfoslegales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    margin-right: 5%;
+    margin-top: 6vh;
+}
+
+#flexinfoslegales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mentions {
+    text-decoration: none;
+    color: #8F8F8F;
+    margin-top: 5vh;
+}
+
+#politique {
+    text-decoration: none;
+    color: #8F8F8F;
+    margin-top: 2vh;
+}
+
+#footer-footer {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    background-color: #8F8F8F;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 3px;
+}
+
+#toutdroitsreserves {
+    order: 2;
+    margin-right: 40%;
+}
+
+#designedby {
+    margin-left: 2rem;
+    order: 1;
+}
+
+@media screen and (max-width: 780px) {
+    #logoAMW {
+        width: 15rem;
+        height: auto;
+    }
+    
+    #menu2 {
+        flex-direction: column;
+    }
+    
+    #menu2 a {
+        margin: 0.25rem 0;
+        text-align:end
+    }
+
+    #menu-flex a {
+        padding: 20px 50px;
+    }
+
+    #menu-flex li:hover a {
+        padding: 15px 50px 20px 50px;
+    }
+
+    #slide1 {
+        height: 125vh;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    #slide1 h1 {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #f7b500;
+        margin-top: 7.5rem;
+    }
+
+    #slide1p {
+        width: 100%;
+        margin-top: 4rem;
+        text-align: justify;
+    }
+
+    #slide2 {
+        height: 175vh;
+    }
+
+    #slide2fleximages {
+        background-color: rgba(53, 53, 53, 0.623);
+        width: 100%;
+    }
+
+    #slide3flex {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        padding: 2.5rem;
+        width: 100%;
+    }
+
+    #slide3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #slide1 {
+        height: 165vh;
+    }
+
+    #slide1 h1 {
+        margin-top: 5rem;
+    }
+
+    #menu-flex {
+        flex-direction: column;
+    }
+    
+    #menu-flex li {
+        float: none;
+    }
+    
+    #menu-flex a {
+        padding: 20px 500px;
+        white-space: pre;
+    }
+
+    .menu-section:hover {
+        background-color: rgb(53, 53, 53);
+        border-top: 5px solid #f7b500;
+    }
+    
+    #menu-flex li:hover a {
+        padding: 15px 500px 20px 500px;
+    }
+
+    #slide2 {
+        height: 307.5vh;
+    }
+
+    #slide2fleximages {
+        background-color: rgba(53, 53, 53, 0.623);
+        width: 100%;
+    }
+
+    #slide3 {
+        height: 150vh;
+    }
+
+    #slide3flex {
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

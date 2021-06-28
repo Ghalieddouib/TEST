@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>
+            AutoWebMa
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="styles_2.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <script src="jquery.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $('#menuicone').click(function(){
+                    $('#menu-flex').slideToggle();
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <div id="flexheader">
+                <i class="fas fa-bars fa-2x" id="menuicone"></i>
+                <div id="logoflex">
+                    <a href="#"><img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\AutoWebMa.png" alt="logo AWM" id="logoAMW"></a>
+                </div>
+                <div id="menu2">
+                    <a href="a_propos.html" class="menuclickable"> à propos </a>
+                    <a href="https://wa.me/+212624226291?text= Site avec finitions et tout" class="menuclickable"> contactez nous </a>
+                </div>
+            </div>
+            <nav id="menu-flex" style="display: none;">
+                <ul>
+                    <li><a href="#slide1" class="menu-section"> Introduction </a></li>
+                    <li><a href="#slide2" class="menu-section"> Notre selection </a></li>
+                    <li><a href="#slide3" class="menu-section"> Salons de l'auto </a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main-content" style="width: 100%;">
+            <div id="slide1">
+                <h1> L'amour de l'automobile </h1>
+                <div id="slide1p">
+                    <p>     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis. Feugiat nibh sed pulvinar proin gravida. Velit scelerisque in dictum non. Pellentesque eu tincidunt tortor aliquam nulla. Tortor id aliquet lectus proin nibh. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Sed nisi lacus sed viverra tellus in hac habitasse platea. Eu volutpat odio facilisis mauris. Tellus in hac habitasse platea. Lectus sit amet est placerat in egestas erat imperdiet.</p>
+                    <p>Morbi blandit cursus risus at. Consectetur purus ut faucibus pulvinar elementum integer enim. Tristique senectus et netus et malesuada fames ac turpis egestas. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Congue eu consequat ac felis. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Vulputate odio ut enim blandit. Amet justo donec enim diam vulputate. Morbi quis commodo odio aenean sed adipiscing diam. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Integer feugiat scelerisque varius morbi enim nunc. Nunc sed blandit libero volutpat sed cras. Purus viverra accumsan in nisl nisi. Bibendum arcu vitae elementum curabitur. Leo urna molestie at elementum eu facilisis sed odio. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Iaculis eu non diam.</p>
+                </div>
+                <a href="#slide2"><button id="button"> Découvrez en plus </button></a>
+            </div>
+            <div id="slide2">
+                <h1 class="title"> Notre sélection auto </h1>
+                <div id="slide2fleximages">
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\LotusEvija.jpg" alt="Lotus Evija" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.topgear.com/car-news/electric/flat-out-quad-motor-lotus-evija-electric-hypercar" style="text-decoration: none;"><div class="text"> Lotus Evija </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\McLaren720s.jpg" alt="McLaren 720s" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.topgear.com/car-reviews/mclaren/720s#:~:text=The%20720S%20generates%2050%20per,lofty%20and%20possibly%20incompatible%20goals." style="text-decoration: none;"><div class="text"> McLaren 720s </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\BugattiDivo.jpg" alt="Bugatti Divo" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.topgear.com/car-reviews/divo/first-drive" style="text-decoration: none;"><div class="text"> Bugatti Divo </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\PaganiHuayraBC.jpg" alt="Pagani Huayra BC" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.topgear.com/car-reviews/pagani/huayra/60-bc/first-drive" style="text-decoration: none;"><div class="text"> Pagani Huayra BC </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\TeslaRoadster.jpg" alt="Tesla Roadster" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.topgear.com/car-news/electric/tesla-roadster-be-even-better-prototype" style="text-decoration: none;"><div class="text"> Tesla Roadster </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\LamboGT.jpg" alt="Lamborghini Gran Turismo" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.topgear.com/car-news/gaming/meet-lamborghini-lambo-v12-vision-gran-turismo" style="text-decoration: none;"><div class="text"> Lamborghini GT </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\Porsche918Spyder.jpg" alt="Porsche 918 Spyder" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.caranddriver.com/porsche/918" style="text-decoration: none;"><div class="text"> Porsche 918 Spyder </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\BrabusRocket900.jpg" alt="Brabus Rocket 900" class="slide2images">
+                        <div class="middle">
+                            <a href="https://gtspirit.com/2020/10/23/2020-brabus-rocket-900-one-of-ten-unveil-review/#:~:text=There%20are%20two%20dominating%20traits,not%20so%20pleasant%2C%20the%20understeer." style="text-decoration: none;"><div class="text"> Brabus Rocket 900 </div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\KoenigseggJesko.jpg" alt="Koenigsegg Jesko" class="slide2images">
+                        <div class="middle">
+                            <a href="https://www.topgear.com/car-news/geneva-motor-show/this-is-the-koenigsegg-jesko-and-it-is-the-worlds-first-300mph-hypercar" style="text-decoration: none;"><div class="text"> Koenigsegg Jesko </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slide3">
+                <h1 class="title"> Salons de l'auto </h1>
+                <div id="slide3flex">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/cR33gX35SJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/gr3_WBUvT0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/9JrMDJCvwxI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="divflexfooter">
+                <div id="divlogoplusreseauxsociaux">
+                    <a href="#"><img src="D:\travail\seconde\SNT\WEB_DATA\Site_AutoWebMa\ressources\AutoWebMa.png" alt="logo AWM" id="logoAMWfooter"></a>
+                    <p > Suivez nous aussi sur ces reseaux : </p>
+                    <div id="menu-icons-footer">
+                        <a href="https://twitter.com/GEddouib"><i class="fab fa-twitter-square fa-3x" id="iconeinstafooter"></i></a>
+                        <a href="https://www.instagram.com/ghali_edd/"><i class="fab fa-instagram-square fa-3x" id="iconetwitterfooter"></i></a>
+                    </div>
+                    <a href="https://wa.me/+212624226291" id="contactfooter" class="menuclickable"> contactez nous </a>
+                </div>
+                <div id="trait_dessus"></div>
+                <div id="divinfoslegales">
+                    <h1 style="font-size: 28px;"> Infos légales </h1>
+                    <div id="flexinfoslegales">
+                        <a href="mentions.html" id="mentions" class="menuclickable"> Mentions légales </a>
+                        <a href="politique.html" id="politique" class="menuclickable"> Politiques de confidentialité </a>
+                    </diV>
+                </div>
+            </div>
+            <div id="footer-footer">
+                <p id="designedby"> Designed by <span style="color: #f7b500;">Ghali Eddouib</span></p>
+                <p id="toutdroitsreserves"> AutoWebMa 2020 © Tous droits réservés </p>           
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
